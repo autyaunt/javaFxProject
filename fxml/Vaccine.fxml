@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #2c2929;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <right>
+      <AnchorPane prefHeight="396.0" prefWidth="503.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="RED" layoutX="177.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="!Name" wrappingWidth="218.13665771484375">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="RED" layoutX="127.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="เข็มแรก" wrappingWidth="99.7366943359375">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="RED" layoutX="286.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="!Vaccine1" wrappingWidth="174.13671875">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="RED" layoutX="286.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="!Vaccine2" wrappingWidth="174.13671875">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="RED" layoutX="286.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="!Vaccine3" wrappingWidth="174.13671875">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Button layoutX="211.0" layoutY="286.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="78.0" style="-fx-background-color: #ffa3a3;" text="EDIT" />
+            <Text fill="RED" layoutX="127.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="เข็มสาม" wrappingWidth="99.7366943359375">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="RED" layoutX="127.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="เข็มสี่" wrappingWidth="99.7366943359375">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="RED" layoutX="286.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="!Vaccine4" wrappingWidth="174.13671875">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="RED" layoutX="127.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="เข็มสอง" wrappingWidth="99.7366943359375">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </right>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="396.0" prefWidth="200.0" style="-fx-background-color: #262323;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="200.0" style="-fx-background-color: #ff5757;" text="Home" textFill="#f7f7f7">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Region prefHeight="32.0" prefWidth="200.0" />
+                  <Button mnemonicParsing="false" prefHeight="42.0" prefWidth="200.0" style="-fx-background-color: #ff5757;" text="Profile" textFill="#f7f7f7">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Region prefHeight="32.0" prefWidth="200.0" />
+                  <Button mnemonicParsing="false" prefHeight="14.0" prefWidth="200.0" style="-fx-background-color: #ff5757;" text="Vaccine" textFill="#f7f7f7">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Region prefHeight="32.0" prefWidth="200.0" />
+                  <Button mnemonicParsing="false" prefHeight="18.0" prefWidth="200.0" style="-fx-background-color: #ff5757;" text="รายงานผู้ติดเชื้อ" textFill="#f7f7f7">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Region prefHeight="32.0" prefWidth="200.0" />
+                  <Button mnemonicParsing="false" prefHeight="23.0" prefWidth="200.0" style="-fx-background-color: #ff5757;" text="แบบประเมินผู้ติดเชื้อ" textFill="#f7f7f7">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <top>
+      <AnchorPane prefHeight="88.0" prefWidth="700.0" style="-fx-background-color: #262323;" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="87.0" prefWidth="256.0" text="      Timeline Reminder" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </opaqueInsets>
+            </Label>
+            <Circle fill="DODGERBLUE" layoutX="501.0" layoutY="44.0" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label layoutX="542.0" prefHeight="87.0" prefWidth="145.0" text="   Username" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </opaqueInsets>
+            </Label>
+            <Circle fill="#e3f1ff00" layoutX="501.0" layoutY="44.0" radius="43.0" stroke="#ef7777" strokeType="INSIDE" strokeWidth="5.0" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
