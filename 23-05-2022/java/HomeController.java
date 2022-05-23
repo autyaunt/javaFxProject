@@ -29,10 +29,10 @@ public class HomeController {
     private String tempaddressLabel;
     private String tempphonenumLabel;
     private String tempemailLabel;
-    private String tempfirstvacLebel;
-    private String tempsecondvacLebel;
-    private String tempthirdvacLebel;
-    private String tempfourthvacLebel;
+    private String tempfirstvacLabel;
+    private String tempsecondvacLabel;
+    private String tempthirdvacLabel;
+    private String tempfourthvacLabel;
     private String temppassword;
 
 
@@ -51,10 +51,10 @@ public class HomeController {
         tempemailLabel = user.getEmail();
         tempusernameLabel = user.getUserName();
         temppassword = user.getPassword();
-        tempfirstvacLebel = user.getVaccine1();
-        tempsecondvacLebel = user.getVaccine2();
-        tempthirdvacLebel = user.getVaccine3();
-        tempfourthvacLebel = user.getVaccine4();
+        tempfirstvacLabel = user.getVaccine1();
+        tempsecondvacLabel = user.getVaccine2();
+        tempthirdvacLabel = user.getVaccine3();
+        tempfourthvacLabel = user.getVaccine4();
 
         usernameLabel.setText(tempusernameLabel);
     }
@@ -66,14 +66,14 @@ public class HomeController {
 
         User user = new User(tempfirstname, templastname, tempbirthdayLabel,
                 tempaddressLabel, tempphonenumLabel, tempemailLabel,
-                tempusernameLabel, temppassword, tempfirstvacLebel,
-                tempsecondvacLebel, tempthirdvacLebel, tempfourthvacLebel);
+                tempusernameLabel, temppassword, tempfirstvacLabel,
+                tempsecondvacLabel, tempthirdvacLabel, tempfourthvacLabel);
         ProfileController profileController = loader.getController();
 
         profileController.displayUsername(tempfirstname, templastname, tempbirthdayLabel,
                 tempaddressLabel, tempphonenumLabel, tempemailLabel,
-                tempusernameLabel, temppassword, tempfirstvacLebel,
-                tempsecondvacLebel, tempthirdvacLebel, tempfourthvacLebel);
+                tempusernameLabel, temppassword, tempfirstvacLabel,
+                tempsecondvacLabel, tempthirdvacLabel, tempfourthvacLabel);
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
@@ -90,13 +90,13 @@ public class HomeController {
 
         User user = new User(tempfirstname, templastname, tempbirthdayLabel,
                 tempaddressLabel, tempphonenumLabel, tempemailLabel,
-                tempusernameLabel, temppassword, tempfirstvacLebel,
-                tempsecondvacLebel, tempthirdvacLebel, tempfourthvacLebel);
+                tempusernameLabel, temppassword, tempfirstvacLabel,
+                tempsecondvacLabel, tempthirdvacLabel, tempfourthvacLabel);
         CaseReportController caseReportController = loader.getController();
         caseReportController.displayUsername(tempfirstname, templastname, tempbirthdayLabel,
                 tempaddressLabel, tempphonenumLabel, tempemailLabel,
-                tempusernameLabel, temppassword, tempfirstvacLebel,
-                tempsecondvacLebel, tempthirdvacLebel, tempfourthvacLebel);
+                tempusernameLabel, temppassword, tempfirstvacLabel,
+                tempsecondvacLabel, tempthirdvacLabel, tempfourthvacLabel);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
         stage.show();
@@ -109,13 +109,13 @@ public class HomeController {
 
         User user = new User(tempfirstname, templastname, tempbirthdayLabel,
                 tempaddressLabel, tempphonenumLabel, tempemailLabel,
-                tempusernameLabel, temppassword, tempfirstvacLebel,
-                tempsecondvacLebel, tempthirdvacLebel, tempfourthvacLebel);
+                tempusernameLabel, temppassword, tempfirstvacLabel,
+                tempsecondvacLabel, tempthirdvacLabel, tempfourthvacLabel);
         RiskAssesmentController riskAssesmentController = loader.getController();
         riskAssesmentController.displayUsername(tempfirstname, templastname, tempbirthdayLabel,
                 tempaddressLabel, tempphonenumLabel, tempemailLabel,
-                tempusernameLabel, temppassword, tempfirstvacLebel,
-                tempsecondvacLebel, tempthirdvacLebel, tempfourthvacLebel);
+                tempusernameLabel, temppassword, tempfirstvacLabel,
+                tempsecondvacLabel, tempthirdvacLabel, tempfourthvacLabel);
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
@@ -124,3 +124,4 @@ public class HomeController {
 
 
 }
+
