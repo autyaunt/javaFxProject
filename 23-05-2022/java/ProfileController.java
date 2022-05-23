@@ -16,12 +16,18 @@ public class ProfileController {
 
     @FXML
     private Label usernameLabel;
+    @FXML
     private Label nameLabel;
+    @FXML
     private Label birthdayLabel;
+    @FXML
     private Label addressLabel;
+    @FXML
     private Label phonenumLabel;
+    @FXML
     private Label emailLabel;
-    private Label firstvacLebel, secondvacLebel, thirdvacLebel, fourthvacLebel;
+    @FXML
+    private Label firstvacLabel ,secondvacLabel, thirdvacLabel, fourthvacLabel;
 
     private String tempfirstname;
     private String templastname;
@@ -31,10 +37,10 @@ public class ProfileController {
     private String tempaddressLabel;
     private String tempphonenumLabel;
     private String tempemailLabel;
-    private String tempfirstvacLebel;
-    private String tempsecondvacLebel;
-    private String tempthirdvacLebel;
-    private String tempfourthvacLebel;
+    private String tempfirstvacLabel;
+    private String tempsecondvacLabel;
+    private String tempthirdvacLabel;
+    private String tempfourthvacLabel;
     private String temppassword;
 
     public void displayUsername(String firstName, String lastName, String phoneNumber, String email, String userName,
@@ -51,10 +57,10 @@ public class ProfileController {
         tempemailLabel = user.getEmail();
         tempusernameLabel = user.getUserName();
         temppassword = user.getPassword();
-        tempfirstvacLebel = user.getVaccine1();
-        tempsecondvacLebel = user.getVaccine2();
-        tempthirdvacLebel = user.getVaccine3();
-        tempfourthvacLebel = user.getVaccine4();
+        tempfirstvacLabel = user.getVaccine1();
+        tempsecondvacLabel = user.getVaccine2();
+        tempthirdvacLabel = user.getVaccine3();
+        tempfourthvacLabel = user.getVaccine4();
 
 
         usernameLabel.setText(tempusernameLabel);
@@ -63,10 +69,10 @@ public class ProfileController {
         addressLabel.setText(tempaddressLabel);
         phonenumLabel.setText(tempphonenumLabel);
         emailLabel.setText(tempemailLabel);
-        firstvacLebel.setText(tempfirstvacLebel);
-        secondvacLebel.setText(tempsecondvacLebel);
-        thirdvacLebel.setText(tempthirdvacLebel);
-        fourthvacLebel.setText(tempfourthvacLebel);
+        firstvacLabel.setText(tempfirstvacLabel);
+        secondvacLabel.setText(tempsecondvacLabel);
+        thirdvacLabel.setText(tempthirdvacLabel);
+        fourthvacLabel.setText(tempfourthvacLabel);
     }
 
 
@@ -76,13 +82,13 @@ public class ProfileController {
 
         User user = new User(tempfirstname, templastname, tempbirthdayLabel,
                 tempaddressLabel, tempphonenumLabel, tempemailLabel,
-                tempusernameLabel, temppassword, tempfirstvacLebel,
-                tempsecondvacLebel, tempthirdvacLebel, tempfourthvacLebel);
+                tempusernameLabel, temppassword, tempfirstvacLabel,
+                tempsecondvacLabel, tempthirdvacLabel, tempfourthvacLabel);
         HomeController homeController = loader.getController();
         homeController.displayUsername(tempfirstname, templastname, tempbirthdayLabel,
                 tempaddressLabel, tempphonenumLabel, tempemailLabel,
-                tempusernameLabel, temppassword, tempfirstvacLebel,
-                tempsecondvacLebel, tempthirdvacLebel, tempfourthvacLebel);
+                tempusernameLabel, temppassword, tempfirstvacLabel,
+                tempsecondvacLabel, tempthirdvacLabel, tempfourthvacLabel);
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
@@ -96,13 +102,13 @@ public class ProfileController {
 
         User user = new User(tempfirstname, templastname, tempbirthdayLabel,
                 tempaddressLabel, tempphonenumLabel, tempemailLabel,
-                tempusernameLabel, temppassword, tempfirstvacLebel,
-                tempsecondvacLebel, tempthirdvacLebel, tempfourthvacLebel);
+                tempusernameLabel, temppassword, tempfirstvacLabel,
+                tempsecondvacLabel, tempthirdvacLabel, tempfourthvacLabel);
         CaseReportController caseReportController = loader.getController();
         caseReportController.displayUsername(tempfirstname, templastname, tempbirthdayLabel,
                 tempaddressLabel, tempphonenumLabel, tempemailLabel,
-                tempusernameLabel, temppassword, tempfirstvacLebel,
-                tempsecondvacLebel, tempthirdvacLebel, tempfourthvacLebel);
+                tempusernameLabel, temppassword, tempfirstvacLabel,
+                tempsecondvacLabel, tempthirdvacLabel, tempfourthvacLabel);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
         stage.show();
@@ -116,13 +122,13 @@ public class ProfileController {
 
         User user = new User(tempfirstname, templastname, tempbirthdayLabel,
                 tempaddressLabel, tempphonenumLabel, tempemailLabel,
-                tempusernameLabel, temppassword, tempfirstvacLebel,
-                tempsecondvacLebel, tempthirdvacLebel, tempfourthvacLebel);
+                tempusernameLabel, temppassword, tempfirstvacLabel,
+                tempsecondvacLabel, tempthirdvacLabel, tempfourthvacLabel);
         RiskAssesmentController riskAssesmentController = loader.getController();
         riskAssesmentController.displayUsername(tempfirstname, templastname, tempbirthdayLabel,
                 tempaddressLabel, tempphonenumLabel, tempemailLabel,
-                tempusernameLabel, temppassword, tempfirstvacLebel,
-                tempsecondvacLebel, tempthirdvacLebel, tempfourthvacLebel);
+                tempusernameLabel, temppassword, tempfirstvacLabel,
+                tempsecondvacLabel, tempthirdvacLabel, tempfourthvacLabel);
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
