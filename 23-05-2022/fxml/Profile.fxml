@@ -135,17 +135,17 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label fx:id="secondvacLebel" layoutX="194.0" layoutY="247.0" prefHeight="26.0" prefWidth="55.0" text="!second" textFill="#ff5757">
+            <Label fx:id="secondvacLabel" layoutX="194.0" layoutY="247.0" prefHeight="26.0" prefWidth="55.0" text="!second" textFill="#ff5757">
                <font>
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label fx:id="thirdvacLebel" layoutX="271.0" layoutY="247.0" prefHeight="26.0" prefWidth="55.0" text="!third" textFill="#ff5757">
+            <Label fx:id="thirdvacLabel" layoutX="271.0" layoutY="247.0" prefHeight="26.0" prefWidth="55.0" text="!third" textFill="#ff5757">
                <font>
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label fx:id="fourthvacLebel" layoutX="339.0" layoutY="247.0" prefHeight="26.0" prefWidth="55.0" text="!fourth" textFill="#ff5757">
+            <Label fx:id="fourthvacLabel" layoutX="339.0" layoutY="247.0" prefHeight="26.0" prefWidth="55.0" text="!fourth" textFill="#ff5757">
                <font>
                   <Font size="16.0" />
                </font>
