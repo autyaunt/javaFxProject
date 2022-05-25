@@ -165,9 +165,9 @@ public class RiskAssesmentController implements Initializable {
         if(Symptom8.isSelected()) {risk +=1;} else {risk +=0;
         }
     }
-    public void riskMultiplied(){
-        if(riskmultiplier1.isSelected()) {riskmultiplied =1*1.5;} else {risk +=0;}
-        if(riskmultiplier2.isSelected()) {riskmultiplied =riskmultiplied*1.5;} else {risk +=0;}
+     public void riskMultiplied(){
+        if(riskmultiplier1.isSelected()) {riskmultiplied =1*1.5;risk+=1;} else {risk +=0;}
+        if(riskmultiplier2.isSelected()) {riskmultiplied =riskmultiplied*1.5;risk+=1;} else {risk +=0;}
     }
     public void showResult(){
         if (risk*riskmultiplied>=8){
