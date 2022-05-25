@@ -45,18 +45,19 @@ public class RiskAssesmentController implements Initializable {
     private String tempthirdvacLabel;
     private String tempfourthvacLabel;
     private String temppassword;
-    private int risk;
+    private double risk=0;
     private double riskmultiplied=1;
-
+    private double score;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
        AgeChoicebox.getItems().addAll(age);
         GenderChoicebox.getItems().addAll(gender);
+
     }
 
 
     public void Assess(ActionEvent event) {
-        checkSymtoms();
+        checkSymptoms();
         riskMultiplied();
         showResult();
         risk=0;riskmultiplied=1;
@@ -154,27 +155,30 @@ public class RiskAssesmentController implements Initializable {
         stage.show();
     }
 
-    public void checkSymtoms(){
-        if(Symptom1.isSelected()) {risk +=1;} else {risk +=0;}
-        if(Symptom2.isSelected()) {risk +=1;} else {risk +=0;}
-        if(Symptom3.isSelected()) {risk +=1;} else {risk +=0;}
-        if(Symptom4.isSelected()) {risk +=1;} else {risk +=0;}
-        if(Symptom5.isSelected()) {risk +=1;} else {risk +=0;}
-        if(Symptom6.isSelected()) {risk +=1;} else {risk +=0;}
-        if(Symptom7.isSelected()) {risk +=1;} else {risk +=0;}
-        if(Symptom8.isSelected()) {risk +=1;} else {risk +=0;
+    public void checkSymptoms(){
+        if(Symptom1.isSelected()) {risk +=10;} else {risk +=0;}
+        if(Symptom2.isSelected()) {risk +=10;} else {risk +=0;}
+        if(Symptom3.isSelected()) {risk +=10;} else {risk +=0;}
+        if(Symptom4.isSelected()) {risk +=10;} else {risk +=0;}
+        if(Symptom5.isSelected()) {risk +=10;} else {risk +=0;}
+        if(Symptom6.isSelected()) {risk +=10;} else {risk +=0;}
+        if(Symptom7.isSelected()) {risk +=10;} else {risk +=0;}
+        if(Symptom8.isSelected()) {risk +=10;} else {risk +=0;
         }
     }
-     public void riskMultiplied(){
-        if(riskmultiplier1.isSelected()) {riskmultiplied =1*1.5;risk+=1;} else {risk +=0;}
-        if(riskmultiplier2.isSelected()) {riskmultiplied =riskmultiplied*1.5;risk+=1;} else {risk +=0;}
+    public void riskMultiplied(){
+        if(riskmultiplier1.isSelected()&&riskmultiplier2.isSelected()) {riskmultiplied =1.5*1.5;risk+=50;}
+        else if(riskmultiplier2.isSelected() || riskmultiplier1.isSelected()) {riskmultiplied =1*1.5;risk+=30;}
+        else riskmultiplied = 1;
+
     }
     public void showResult(){
-        if (risk*riskmultiplied>=8){
+        score = risk*riskmultiplied;
+        if (score>=80){
             result.setText("HIGH");
             result.setTextFill(Color.RED);}
 
-        else if(risk*riskmultiplied >4){
+        else if(score >40){
             result.setText("MEDIUM");
             result.setTextFill(Color.YELLOW);}
 
@@ -186,4 +190,5 @@ public class RiskAssesmentController implements Initializable {
 
 
 }
+
 
