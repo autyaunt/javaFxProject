@@ -149,7 +149,7 @@
                   <Font size="15.0" />
                </font>
             </Text>
-            <Label fx:id="result" layoutX="348.0" layoutY="301.0" text="ผลการประเมิน" textFill="#ff5757">
+            <Label fx:id="result" layoutX="348.0" layoutY="301.0" text="ผลการประเมิน" textFill="#2e2929">
                <font>
                   <Font size="24.0" />
                </font>
