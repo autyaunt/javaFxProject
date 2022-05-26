@@ -16,7 +16,7 @@
     <left>
         <AnchorPane prefHeight="400.0" prefWidth="246.0" style="-fx-background-color: #262323;" BorderPane.alignment="CENTER">
             <children>
-                <ImageView fitHeight="156.0" fitWidth="211.0" layoutX="45.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="152.0" fitWidth="186.0" layoutX="30.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@HealthSymbol.png" />
                     </image>
@@ -90,7 +90,7 @@
                   <Font size="14.0" />
                </font>
             </Label>
-                <Button fx:id="confirmButton" layoutX="230.0" layoutY="369.0" mnemonicParsing="false" onAction="#confirmRegisterAction" style="-fx-background-color: #ffa3a3;" text="Confirm" />
+                <Button fx:id="confirmButton" layoutX="236.0" layoutY="365.0" mnemonicParsing="false" onAction="#confirmRegisterAction" style="-fx-background-color: #ffa3a3;" text="Confirm" />
             <ChoiceBox fx:id="vaccine1ChoiceBox" layoutX="155.0" layoutY="313.0" prefHeight="26.0" prefWidth="51.0" />
             <ChoiceBox fx:id="vaccine2ChoiceBox" layoutX="215.0" layoutY="313.0" prefHeight="26.0" prefWidth="51.0" />
             <ChoiceBox fx:id="vaccine3ChoiceBox" layoutX="275.0" layoutY="313.0" prefHeight="26.0" prefWidth="51.0" />
