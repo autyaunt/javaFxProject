@@ -40,15 +40,15 @@
                         <Font size="14.0" />
                     </font></Label>
                 <TextField fx:id="usernameTextField" layoutX="175.0" layoutY="175.0" promptText="Username" />
-                <Button fx:id="loginButton" layoutX="205.0" layoutY="275.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="20.0" prefWidth="60.0" style="-fx-background-color: #ffa3a3;" text="Login" />
+                <Button fx:id="loginButton" layoutX="220.0" layoutY="272.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="20.0" prefWidth="60.0" style="-fx-background-color: #ffa3a3;" text="Login" />
                 <PasswordField fx:id="enterPasswordTextField" layoutX="175.0" layoutY="226.0" promptText="Password" />
-                <Button fx:id="registerButton" layoutX="205.0" layoutY="379.0" mnemonicParsing="false" onAction="#registerButtonAction" prefHeight="20.0" prefWidth="60.0" style="-fx-background-color: #ffa3a3;" text="register" />
+                <Button fx:id="registerButton" layoutX="220.0" layoutY="378.0" mnemonicParsing="false" onAction="#registerButtonAction" prefHeight="20.0" prefWidth="60.0" style="-fx-background-color: #ffa3a3;" text="register" />
                 <Label layoutX="67.0" layoutY="49.0" prefHeight="85.0" prefWidth="242.0" text="Timeline Reminder" textFill="#ff5757">
                     <font>
                         <Font size="27.0" />
                     </font>
                 </Label>
-                <Label layoutX="174.0" layoutY="347.0" prefHeight="32.0" prefWidth="122.0" text="ยังไม่มีบัญชี สมัครเลย" textFill="#ff5757">
+                <Label layoutX="189.0" layoutY="346.0" prefHeight="32.0" prefWidth="122.0" text="ยังไม่มีบัญชี สมัครเลย" textFill="#ff5757">
                     <font>
                         <Font size="14.0" />
                     </font>
